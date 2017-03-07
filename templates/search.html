@@ -1,0 +1,10 @@
+<div class="jumbotron" ng-controller="SearchController as vm">
+    <h2>Search an artist...</h2>
+    <form action="" method="POST" class="form-inline" role="form" ng-submit="vm.searchArtist($event)">
+        <div class="form-group">
+            <label class="sr-only" for="">label</label>
+            <input type="text" class="form-control" id="" placeholder="Input field" ng-model="vm.search" />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

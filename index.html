@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="spotifyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify Angular Demo</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+        #log-search {
+            padding:10px;
+            border:1px solid #CCC;
+            position: fixed;
+            top:10px;
+            right: 10px;
+        }
+        select {
+            color: #000;
+        }
+        h1 span {
+            background: #FFF;
+            padding: 7px;
+            border-radius:10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><span>🎶</span> Spotify Finder Angular</h1>
+
+        <div ng-include src="'templates/history.html'"></div>
+
+        <div ng-include src="'templates/search.html'"></div>
+        <div ng-include src="'templates/artists.html'"></div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.15/angular-filter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="js/app.module.js"></script>
+    <script src="js/app.constants.js"></script>
+    <script src="js/factories/SpotifyFactory.js"></script>
+    <script src="js/controllers/SearchController.js"></script>
+    <script src="js/controllers/ArtistsController.js"></script>
+    <script src="js/controllers/HistorySearchController.js"></script>
+
+</body>
+
+</html>

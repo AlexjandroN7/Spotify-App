@@ -1,0 +1,16 @@
+<div class="jumbotron" ng-controller="ArtistsController as vm" ng-show="vm.artists.length">
+    <h2>Select an artist...</h2>
+    <form action="" method="POST" class="form-inline" role="form">
+        <div class="form-group">
+            <select name="" id="">
+                <option
+                    value="{{artists.id}}"
+                    ng-repeat="artist in vm.artists"
+                    ng-selected="$index === 0">
+                    {{artist.name}}
+                </option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
